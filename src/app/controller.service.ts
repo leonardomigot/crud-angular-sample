@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class ControllerService {
 
-  items: object[] = [];
+  items = [];
 
   constructor() { }
 
@@ -15,5 +15,17 @@ export class ControllerService {
 
   getItem() {
     return this.items;
+  }
+
+  replaceItem(variable: string, newVariable: string) {
+
+    // find retorna o primeiro item que condiz 
+    let temp = this.items.find(item => item.nome === variable);
+
+    //Tratamento da exceção 
+    if (temp == undefined)
+      throw new Error("Não existe nenhum item com este valor");
+
+    temp.nome = newVariable;
   }
 }

@@ -1,7 +1,6 @@
-.read {
-  border: solid 4px orange;
+.update {
+  border: solid 4px darkolivegreen;
   width: 500px;
   padding: 10px;
   border-radius: 8px;
-
 }

@@ -1,7 +1,6 @@
-.read {
-  border: solid 4px orange;
+.delete {
+  border: solid 4px brown;
   width: 500px;
   padding: 10px;
   border-radius: 8px;
-
 }
