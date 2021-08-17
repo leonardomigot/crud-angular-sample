@@ -18,7 +18,7 @@ export class Comp3Component implements OnInit {
   update(variable: string, newVariable: string): void {
     try{
       this.controllerService.replaceItem(variable, newVariable);
-    }catch(err){
+    } catch(err) {
       window.alert(err.message);
     }
   }

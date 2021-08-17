@@ -8,13 +8,17 @@ import { ControllerService } from '../controller.service';
 })
 export class Comp2Component implements OnInit {
 
-  items: object[] = [];
+  items = [];
 
   constructor( 
     private controllerService: ControllerService
   ) { }
 
   ngOnInit(): void {
+    this.get();
+  }
+
+  get(): void {
     this.items = this.controllerService.getItem();
   }
 
